@@ -97,7 +97,7 @@ class QuizOverlay(
             override fun dispatchKeyEvent(e: KeyEvent): Boolean =
                 if (e.keyCode == KeyEvent.KEYCODE_BACK) true else super.dispatchKeyEvent(e)
         }.apply {
-            orientation = VERTICAL
+            orientation = LinearLayout.VERTICAL
             setBackgroundColor(Color.BLACK)
             setPadding(dp(24), dp(72), dp(24), dp(24))
         }
